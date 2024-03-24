@@ -5,7 +5,11 @@ import Image from "next/image";
 import {useState, useEffect, useMemo, useCallback} from 'react';
 import Map, {Source, Layer} from 'react-map-gl';
 import {dataLayer1} from './map-style';
+import {dataLayer1_line} from './map-style';
 import {dataLayer2} from './map-style';
+import {dataLayer2_line} from './map-style';
+
+
 import {AttributionControl} from 'react-map-gl';
 
 
@@ -131,10 +135,19 @@ export default function Home() {
             <Layer {...dataLayer1} />
           </Source>
 
+          <Source id='1b' type="geojson" data={data1}>
+            <Layer {...dataLayer1_line} />
+          </Source>
+
           {/* Mangrove */}
           <Source id ='2' type="geojson" data={data2}>
             <Layer {...dataLayer2} />
           </Source>
+
+          <Source id='2b' type="geojson" data={data2}>
+            <Layer {...dataLayer2_line} />
+          </Source>
+
 
 
           {hoverInfo && (
@@ -150,3 +163,5 @@ export default function Home() {
     </div>
   );
 }
+
+
