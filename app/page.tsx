@@ -100,7 +100,7 @@ export default function Home() {
     <div className=" min-h-screen flex-col items-center justify-between p-10 bg-[#354545]">
 
       <div>
-      <div className="flex text-[#AAAFAF] tracking-wider text-transform:uppercase"> proof of concept  - for Peter</div>
+      <div className="flex text-[#AAAFAF] tracking-wider text-transform:uppercase"> NEW VISUAL |  proof of concept | for Peter</div>
       <div className="flex text-[#AAAFAF] text-3xl tracking-wider text-transform:uppercase py-5">vegetation mapping </div>
       </div>
 
